@@ -1,0 +1,21 @@
+1. 4 line LCD screen l2c interface, with extra cap on vc and gnd.
+
+2. A/C to D/C (3,3v) converter, 300% over expected need.
+
+3. Arduino compatible board with an Atmel Atmega microcontroller. The board is feed directly to the 3,3v (output) line thus overriding
+built in voltage limiting. voltage limit is 1,8 to 5,5v. This is a choise I had to take in order not to draw al power through the microcontroller
+board. 
+
+4. Adafruit max 31856 breakout board. This one is a bit hard to get hold of cince they are exported from America. They are not expensive.
+But it will take you 60-120 days to reach you and an additional 100 to 150$, Still it is the best setup. I have tried a chinese setup. And
+that was a waste of time. only way to get that one to work is to supress the hardware errors.
+
+5. power out for low amp pre relay.
+
+6. Resistor ladder from the numpad.
+
+7. 250v D/C in.
+
+8. 3,3 (max 5v) feed to max31856 with cap against noise.
+
+9. A big cap at the extra vc pin hole. This will feed the whole setup with power, but the microcontroller kind of first (~)
